@@ -26,11 +26,11 @@ public class Player {
         int temp = rnd.nextInt(1, 6);
         if(temp == 1){
             isRightHanded = false;
-            bowlStyle = Globals.leftHandBowlStyles[Globals.leftHandBowlStyles.length];
+            bowlStyle = Globals.leftHandBowlStyles[rnd.nextInt(Globals.leftHandBowlStyles.length)];
         }
         else{
             isRightHanded = true;
-            bowlStyle = Globals.rightHandBowlStyles[Globals.rightHandBowlStyles.length];
+            bowlStyle = Globals.rightHandBowlStyles[rnd.nextInt(Globals.rightHandBowlStyles.length)];
         }
     }
     //Getters and Setters
